@@ -11,7 +11,12 @@ int main (int argc, char *argv[]){
     int numThreads, numSorteios, retorno;
     long i;
     float pi,  ac = 0, aq =0;
-    printf("Teste\n");
+    if (argc < 2){
+       printf("Expected 2 arguments\n");
+       printf("Please enter the correcet command:\n");
+       printf("    monteCarlo <numberOfThreads> <numberOfSamples>\n");
+       exit(0);
+    }
     numThreads = atoi(argv[1]);
     numSorteios = atoi(argv[2]);   
     pthread_t threads[numThreads];

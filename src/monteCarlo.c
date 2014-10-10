@@ -75,8 +75,4 @@ void *rotinaSorteio(void *threadid){
 
 
 // compilar no terminal "gcc -lptrhead motecarlo.c -o rotinaSinal"
-// executar: "./rotinaSonal"
-// enquanto estiver rodando abrir uma nova janela do terminal
-// encontrar o pid do processo com o comando "ps -aux"
-// enviar um sinal para o processo com o comando "kill -USR1 pid"
-// onde pid é o id do processo
+// executar: "./rotinaSonal <numThreads> <numSorteios>"
